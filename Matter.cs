@@ -8,11 +8,11 @@ namespace Univers
 {
     class Matter
     {
-        protected Element element;
+        protected List<Element> elements;
 
-        protected Matter(Element _element)
+        protected Matter(List<Element> _elements)
         {
-            element = _element;
+            elements = _elements;
         }
     }
 }

@@ -10,7 +10,7 @@ namespace Univers
     {
         private Vector2D position;
 
-        public Atom(Element _element, Vector2D _pos) : base(_element)
+        public Atom(Element _element, Vector2D _pos) : base(new List<Element> { _element })
         {
             position = _pos;
         }
