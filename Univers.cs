@@ -16,6 +16,8 @@ namespace Univers
         {
             size = _size;
             matters = new List<Matter>();
+
+            elementFactory = ElementFactory.GetElementFactory();
         }
 
         public void AddCarbon(Vector2D pos)

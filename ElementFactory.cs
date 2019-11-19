@@ -8,6 +8,18 @@ namespace Univers
 {
     class ElementFactory
     {
+        private static ElementFactory instance;
+
+        public ElementFactory()
+        {
+            instance = this;
+        }
+
+        public static ElementFactory GetElementFactory()
+        {
+            return instance;
+        }
+
         public Element GetElement(string name)
         {
             switch(name)
