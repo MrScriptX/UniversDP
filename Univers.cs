@@ -9,6 +9,7 @@ namespace Univers
     class Univers
     {
         private Vector2D size;
+        private ElementFactory elementFactory;
         private List<Matter> matters;
 
         public Univers(Vector2D _size)
@@ -19,19 +20,19 @@ namespace Univers
 
         public void AddCarbon(Vector2D pos)
         {
-            Atom atom = new Atom(new Carbon(), pos);
+            Atom atom = new Atom(elementFactory.GetElement("Carbon"), pos);
             matters.Add(atom);
         }
 
         public void AddHydrogen(Vector2D pos)
         {
-            Atom atom = new Atom(new Hydrogen(), pos);
+            Atom atom = new Atom(elementFactory.GetElement("Hydrogen"), pos);
             matters.Add(atom);
         }
 
         public void AddLithium(Vector2D pos)
         {
-            Atom atom = new Atom(new Lithium(), pos);
+            Atom atom = new Atom(elementFactory.GetElement("Lithium"), pos);
             matters.Add(atom);
         }
     }

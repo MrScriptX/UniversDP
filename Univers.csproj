@@ -46,6 +46,7 @@
     <Compile Include="Atom.cs" />
     <Compile Include="Carbon.cs" />
     <Compile Include="Element.cs" />
+    <Compile Include="ElementFactory.cs" />
     <Compile Include="Hydrogen.cs" />
     <Compile Include="Lithium.cs" />
     <Compile Include="Matter.cs" />
